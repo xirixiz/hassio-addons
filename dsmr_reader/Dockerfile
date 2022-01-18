@@ -9,6 +9,7 @@ RUN apk add --no-cache jq
 COPY bash.sh /app/bash.sh
 RUN chmod a+x /app/bash.sh
 # HOMEASSISTANT Add-On OVERRIDES
+COPY nginx/dsmr-webinterface /etc/nginx/conf.d/dsmr-webinterface.conf
 COPY rootfs /
 RUN chmod a+x /etc/cont-init.d/20-set-app-defaults
 RUN chmod a+x /etc/services.d/dsmr_backend/run

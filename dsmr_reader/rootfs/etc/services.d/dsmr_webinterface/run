@@ -37,6 +37,10 @@ export DATALOGGER_NETWORK_PORT="${DATALOGGER_NETWORK_PORT}"
 export DATALOGGER_SLEEP="${DATALOGGER_SLEEP}"
 export DSMRREADER_LOGLEVEL="${DSMRREADER_LOGLEVEL}"
 export ENABLE_IFRAME="true"
+#--
+export DJANGO_STATIC_URL="static/"
+export DJANGO_FORCE_SCRIPT_NAME="/local_dsmr_reader/"
+export DJANGO_USE_X_FORWARDED_HOST="true"
 
 if [[ "${DATALOGGER_MODE}" = standalone || "${DATALOGGER_MODE}" = receiver ]]; then
     echo "Starting DSMR Reader - webinterface..."

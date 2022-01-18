@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.4
+
+- 
+
 ## 0.7.3
 
 - Fixes to underlying image applied (Thanks Xirixiz)
